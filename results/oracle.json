@@ -1,0 +1,58 @@
+{
+  "machine": "macOS-26.4.1-arm64-arm-64bit / 3.9.6",
+  "solver_h_s": 0.0001,
+  "oracle_rtol": 1e-11,
+  "oracle_atol": 1e-13,
+  "rows": [
+    {
+      "scenario": "step +100 pcm",
+      "t_end_s": 20.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 1.9897004712437213e-11,
+      "max_rel_dev_BDF": 2.8152057182825452e-11
+    },
+    {
+      "scenario": "step +300 pcm",
+      "t_end_s": 10.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 5.860093663634562e-10,
+      "max_rel_dev_BDF": 6.622898503500382e-10
+    },
+    {
+      "scenario": "step -500 pcm",
+      "t_end_s": 30.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 6.057018606775772e-11,
+      "max_rel_dev_BDF": 8.50368180723283e-11
+    },
+    {
+      "scenario": "step -100 pcm",
+      "t_end_s": 30.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 3.603532214689729e-11,
+      "max_rel_dev_BDF": 5.5254738085086937e-11
+    },
+    {
+      "scenario": "ramp +10 pcm/s for 20 s",
+      "t_end_s": 30.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 1.8018450255399958e-10,
+      "max_rel_dev_BDF": 1.2588679149994662e-10
+    },
+    {
+      "scenario": "ramp -20 pcm/s for 10 s",
+      "t_end_s": 30.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 4.349439303788399e-11,
+      "max_rel_dev_BDF": 6.51962776896574e-11
+    },
+    {
+      "scenario": "zigzag piecewise",
+      "t_end_s": 20.0,
+      "checkpoints": 40,
+      "max_rel_dev_LSODA": 2.3848769159285538e-11,
+      "max_rel_dev_BDF": 6.37931222665382e-11
+    }
+  ],
+  "overall_max_rel_dev": 6.622898503500382e-10
+}

@@ -1,0 +1,121 @@
+{
+  "machine": "macOS-26.4.1-arm64-arm-64bit / 3.9.6",
+  "note": "single thread, pure Python solver",
+  "steady_state": {
+    "t_end_s": 100.0,
+    "h_s": 0.001,
+    "max_abs_dev_from_1": 1.3020695632803836e-12
+  },
+  "asymptotic_period": [
+    {
+      "rho_pcm": 50,
+      "period_inhour_s": 136.96944609122008,
+      "period_sim_s": 136.96933943783557,
+      "rel_error": 7.786655166524279e-07
+    },
+    {
+      "rho_pcm": 100,
+      "period_inhour_s": 54.994944797413794,
+      "period_sim_s": 54.99494467159656,
+      "rel_error": 2.287796285193408e-09
+    },
+    {
+      "rho_pcm": 200,
+      "period_inhour_s": 17.389391276535914,
+      "period_sim_s": 17.38939125705422,
+      "rel_error": 1.1203205675049037e-09
+    },
+    {
+      "rho_pcm": -100,
+      "period_inhour_s": -129.95049936449703,
+      "period_sim_s": -129.95049896642053,
+      "rel_error": 3.063293412430499e-09
+    },
+    {
+      "rho_pcm": -300,
+      "period_inhour_s": -89.61737114664993,
+      "period_sim_s": -89.61737101971556,
+      "rel_error": 1.4164035989146393e-09
+    }
+  ],
+  "prompt_jump": {
+    "rho_pcm": 100,
+    "closed_form": 1.1818181818181819,
+    "exact_slow_mode_sum_at_t0": 1.1786108929877992,
+    "rel_error_modes_vs_closed": 0.002713859779554577,
+    "sim_at_5_prompt_tau": 1.1852519178834537,
+    "t_star_s": 0.09090909090909093,
+    "rel_error_sim_vs_closed": 0.002905468978306962
+  },
+  "exact_step_solution": [
+    {
+      "rho_pcm": 100,
+      "h_s": 0.0001,
+      "max_rel_error_vs_exact": 1.3556230822231008e-07
+    },
+    {
+      "rho_pcm": -100,
+      "h_s": 0.0001,
+      "max_rel_error_vs_exact": 2.384522199885048e-07
+    },
+    {
+      "rho_pcm": 300,
+      "h_s": 0.0001,
+      "max_rel_error_vs_exact": 1.7456373100847422e-07
+    },
+    {
+      "rho_pcm": -500,
+      "h_s": 0.0001,
+      "max_rel_error_vs_exact": 2.482018776522363e-06
+    }
+  ],
+  "step_size_study": {
+    "rho_pcm": 100,
+    "t_eval_s": 10.0,
+    "rows": [
+      {
+        "h_s": 0.1,
+        "steps": 100,
+        "rel_error_at_10s": 4.659597303409833e-07
+      },
+      {
+        "h_s": 0.03,
+        "steps": 334,
+        "rel_error_at_10s": 4.189947731007653e-08
+      },
+      {
+        "h_s": 0.01,
+        "steps": 1000,
+        "rel_error_at_10s": 4.659526121200617e-09
+      },
+      {
+        "h_s": 0.003,
+        "steps": 3334,
+        "rel_error_at_10s": 4.192297479165797e-10
+      },
+      {
+        "h_s": 0.001,
+        "steps": 10000,
+        "rel_error_at_10s": 4.778340284678406e-11
+      },
+      {
+        "h_s": 0.0003,
+        "steps": 33334,
+        "rel_error_at_10s": 5.0279006162069045e-12
+      },
+      {
+        "h_s": 0.0001,
+        "steps": 100000,
+        "rel_error_at_10s": 1.3660607386933613e-13
+      }
+    ],
+    "observed_orders": [
+      2.0007311244978645,
+      1.999212663619437,
+      2.00025277027512,
+      1.976803607612693,
+      1.8702048965469487,
+      3.282009886338368
+    ]
+  }
+}

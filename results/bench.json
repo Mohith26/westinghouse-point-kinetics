@@ -1,0 +1,22 @@
+{
+  "machine": "macOS-26.4.1-arm64-arm-64bit / 3.9.6",
+  "note": "single thread, pure Python, no numpy in the hot loop",
+  "rows": [
+    {
+      "h_s": 0.001,
+      "sim_seconds": 60.0,
+      "steps": 60000,
+      "wall_s_best_of_3": 1.4346122919999997,
+      "steps_per_sec": 41823.14645886222,
+      "sim_seconds_per_wall_second": 41.82314645886222
+    },
+    {
+      "h_s": 0.0001,
+      "sim_seconds": 20.0,
+      "steps": 200001,
+      "wall_s_best_of_3": 4.751581042,
+      "steps_per_sec": 42091.463500708196,
+      "sim_seconds_per_wall_second": 4.2091253044442976
+    }
+  ]
+}

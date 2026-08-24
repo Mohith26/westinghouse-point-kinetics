@@ -1,0 +1,2336 @@
+{
+  "machine": "macOS-26.4.1-arm64-arm-64bit / 3.9.6",
+  "n_scenarios": 120,
+  "seed": 12345,
+  "sample_dt_s": 0.01,
+  "sim_h_s": 0.001,
+  "t_end_s": 30.0,
+  "overpower_setpoint": 1.18,
+  "overpower_reset": 1.1,
+  "period_setpoint_s": 10.0,
+  "period_reset_s": 12.0,
+  "window_s": 0.1,
+  "omega_clamp": 5.0,
+  "filter_tau_s": 1.0,
+  "confirm_samples": 20,
+  "true_period_confirm_s": 0.2,
+  "noise_sigma": 0.002,
+  "clean": {
+    "summary": {
+      "n_should_trip": 61,
+      "n_should_not_trip": 59,
+      "missed_trips": 0,
+      "false_trips": 0,
+      "missed_trip_rate": 0.0,
+      "false_trip_rate": 0.0,
+      "response_time_s": {
+        "min": 0.0,
+        "median": 0.010999999999998789,
+        "max": 1.2529999999998622,
+        "mean": 0.1665245901639165
+      }
+    },
+    "scenarios": [
+      {
+        "index": 0,
+        "desc": "ramp +64.0 pcm/s to t=8.1 s",
+        "should_trip": true,
+        "true_time_s": 1.0769999999999922,
+        "tripped": true,
+        "trip_time_s": 2.3299999999998544,
+        "cause": "overpower",
+        "response_time_s": 1.2529999999998622
+      },
+      {
+        "index": 1,
+        "desc": "step -749 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 2,
+        "desc": "ramp +2.0 pcm/s to t=9.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 3,
+        "desc": "step -472 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 4,
+        "desc": "ramp +2.4 pcm/s to t=9.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 5,
+        "desc": "ramp +3.9 pcm/s to t=10.1 s",
+        "should_trip": true,
+        "true_time_s": 17.367999999998244,
+        "tripped": true,
+        "trip_time_s": 17.369999999998246,
+        "cause": "overpower",
+        "response_time_s": 0.0020000000000024443
+      },
+      {
+        "index": 6,
+        "desc": "step +16 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 7,
+        "desc": "step +51 pcm",
+        "should_trip": true,
+        "true_time_s": 5.878000000000298,
+        "tripped": true,
+        "trip_time_s": 5.880000000000298,
+        "cause": "overpower",
+        "response_time_s": 0.002000000000000668
+      },
+      {
+        "index": 8,
+        "desc": "step +361 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 9,
+        "desc": "ramp +3.9 pcm/s to t=13.4 s",
+        "should_trip": true,
+        "true_time_s": 13.347999999998041,
+        "tripped": true,
+        "trip_time_s": 13.34999999999804,
+        "cause": "overpower",
+        "response_time_s": 0.0019999999999988916
+      },
+      {
+        "index": 10,
+        "desc": "step +529 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 11,
+        "desc": "ramp +1.1 pcm/s to t=7.0 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 12,
+        "desc": "step +510 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 13,
+        "desc": "zigzag peak 33 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 14,
+        "desc": "step +281 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 15,
+        "desc": "step +46 pcm",
+        "should_trip": true,
+        "true_time_s": 7.598000000000872,
+        "tripped": true,
+        "trip_time_s": 7.600000000000873,
+        "cause": "overpower",
+        "response_time_s": 0.002000000000000668
+      },
+      {
+        "index": 16,
+        "desc": "step -491 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 17,
+        "desc": "step +543 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 18,
+        "desc": "step +253 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 19,
+        "desc": "step -454 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 20,
+        "desc": "ramp +39.4 pcm/s to t=4.2 s",
+        "should_trip": true,
+        "true_time_s": 2.833999999999799,
+        "tripped": true,
+        "trip_time_s": 3.0199999999997784,
+        "cause": "overpower",
+        "response_time_s": 0.18599999999997952
+      },
+      {
+        "index": 21,
+        "desc": "step +336 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 22,
+        "desc": "step +470 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 23,
+        "desc": "step +42 pcm",
+        "should_trip": true,
+        "true_time_s": 8.905000000000504,
+        "tripped": true,
+        "trip_time_s": 8.910000000000501,
+        "cause": "overpower",
+        "response_time_s": 0.004999999999997229
+      },
+      {
+        "index": 24,
+        "desc": "ramp +57.3 pcm/s to t=4.1 s",
+        "should_trip": true,
+        "true_time_s": 1.3269999999999647,
+        "tripped": true,
+        "trip_time_s": 2.45999999999984,
+        "cause": "overpower",
+        "response_time_s": 1.1329999999998754
+      },
+      {
+        "index": 25,
+        "desc": "step -629 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 26,
+        "desc": "ramp +1.2 pcm/s to t=13.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 27,
+        "desc": "ramp +1.0 pcm/s to t=10.9 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 28,
+        "desc": "step +16 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 29,
+        "desc": "step -163 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 30,
+        "desc": "ramp +2.9 pcm/s to t=7.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 31,
+        "desc": "step +51 pcm",
+        "should_trip": true,
+        "true_time_s": 5.905000000000307,
+        "tripped": true,
+        "trip_time_s": 5.910000000000308,
+        "cause": "overpower",
+        "response_time_s": 0.00500000000000167
+      },
+      {
+        "index": 32,
+        "desc": "step -429 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 33,
+        "desc": "step +477 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 34,
+        "desc": "ramp +30.9 pcm/s to t=8.6 s",
+        "should_trip": true,
+        "true_time_s": 3.4719999999997286,
+        "tripped": true,
+        "trip_time_s": 3.4799999999997278,
+        "cause": "overpower",
+        "response_time_s": 0.007999999999999119
+      },
+      {
+        "index": 35,
+        "desc": "step +331 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 36,
+        "desc": "ramp +30.7 pcm/s to t=6.9 s",
+        "should_trip": true,
+        "true_time_s": 3.487999999999727,
+        "tripped": true,
+        "trip_time_s": 3.4899999999997267,
+        "cause": "overpower",
+        "response_time_s": 0.0019999999999997797
+      },
+      {
+        "index": 37,
+        "desc": "ramp +50.8 pcm/s to t=6.1 s",
+        "should_trip": true,
+        "true_time_s": 1.7039999999999231,
+        "tripped": true,
+        "trip_time_s": 2.6299999999998214,
+        "cause": "overpower",
+        "response_time_s": 0.9259999999998982
+      },
+      {
+        "index": 38,
+        "desc": "step +425 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 39,
+        "desc": "zigzag peak 47 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 40,
+        "desc": "zigzag peak 18 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 41,
+        "desc": "step -476 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 42,
+        "desc": "ramp +2.3 pcm/s to t=13.7 s",
+        "should_trip": true,
+        "true_time_s": 25.558000000008253,
+        "tripped": true,
+        "trip_time_s": 25.560000000008255,
+        "cause": "overpower",
+        "response_time_s": 0.0020000000000024443
+      },
+      {
+        "index": 43,
+        "desc": "step -633 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 44,
+        "desc": "step -649 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 45,
+        "desc": "zigzag peak 56 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 46,
+        "desc": "step -710 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 47,
+        "desc": "step -610 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 48,
+        "desc": "ramp +38.4 pcm/s to t=7.1 s",
+        "should_trip": true,
+        "true_time_s": 2.9739999999997835,
+        "tripped": true,
+        "trip_time_s": 3.059999999999774,
+        "cause": "overpower",
+        "response_time_s": 0.08599999999999053
+      },
+      {
+        "index": 49,
+        "desc": "zigzag peak 40 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 50,
+        "desc": "step -384 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 51,
+        "desc": "step -152 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 52,
+        "desc": "zigzag peak 68 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 53,
+        "desc": "step +239 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 54,
+        "desc": "ramp +49.4 pcm/s to t=5.4 s",
+        "should_trip": true,
+        "true_time_s": 1.8029999999999122,
+        "tripped": true,
+        "trip_time_s": 2.659999999999818,
+        "cause": "overpower",
+        "response_time_s": 0.8569999999999058
+      },
+      {
+        "index": 55,
+        "desc": "step -594 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 56,
+        "desc": "step +416 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 57,
+        "desc": "step +347 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 58,
+        "desc": "step +250 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 59,
+        "desc": "step +23 pcm",
+        "should_trip": true,
+        "true_time_s": 28.41100000001174,
+        "tripped": true,
+        "trip_time_s": 28.42000000001175,
+        "cause": "overpower",
+        "response_time_s": 0.009000000000011
+      },
+      {
+        "index": 60,
+        "desc": "step +252 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 61,
+        "desc": "step -344 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 62,
+        "desc": "step +10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 63,
+        "desc": "ramp +1.2 pcm/s to t=11.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 64,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.188999999999734,
+        "tripped": true,
+        "trip_time_s": 4.189999999999734,
+        "cause": "overpower",
+        "response_time_s": 0.001000000000000334
+      },
+      {
+        "index": 65,
+        "desc": "step +500 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 66,
+        "desc": "step +385 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 67,
+        "desc": "ramp +0.6 pcm/s to t=11.2 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 68,
+        "desc": "ramp +3.2 pcm/s to t=15.0 s",
+        "should_trip": true,
+        "true_time_s": 15.615999999996784,
+        "tripped": true,
+        "trip_time_s": 15.619999999996782,
+        "cause": "overpower",
+        "response_time_s": 0.003999999999997783
+      },
+      {
+        "index": 69,
+        "desc": "ramp +46.4 pcm/s to t=5.9 s",
+        "should_trip": true,
+        "true_time_s": 2.0559999999998846,
+        "tripped": true,
+        "trip_time_s": 2.759999999999807,
+        "cause": "overpower",
+        "response_time_s": 0.7039999999999225
+      },
+      {
+        "index": 70,
+        "desc": "ramp +41.2 pcm/s to t=8.1 s",
+        "should_trip": true,
+        "true_time_s": 2.6009999999998246,
+        "tripped": true,
+        "trip_time_s": 2.9399999999997872,
+        "cause": "overpower",
+        "response_time_s": 0.33899999999996266
+      },
+      {
+        "index": 71,
+        "desc": "step -403 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 72,
+        "desc": "step -285 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 73,
+        "desc": "step +26 pcm",
+        "should_trip": true,
+        "true_time_s": 23.540000000005787,
+        "tripped": true,
+        "trip_time_s": 23.540000000005787,
+        "cause": "overpower",
+        "response_time_s": 0.0
+      },
+      {
+        "index": 74,
+        "desc": "ramp +0.9 pcm/s to t=15.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 75,
+        "desc": "ramp +1.1 pcm/s to t=15.4 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 76,
+        "desc": "step +34 pcm",
+        "should_trip": true,
+        "true_time_s": 14.087999999997631,
+        "tripped": true,
+        "trip_time_s": 14.08999999999763,
+        "cause": "overpower",
+        "response_time_s": 0.0019999999999988916
+      },
+      {
+        "index": 77,
+        "desc": "ramp +48.1 pcm/s to t=6.1 s",
+        "should_trip": true,
+        "true_time_s": 1.903999999999901,
+        "tripped": true,
+        "trip_time_s": 2.6999999999998137,
+        "cause": "overpower",
+        "response_time_s": 0.7959999999999126
+      },
+      {
+        "index": 78,
+        "desc": "step -609 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 79,
+        "desc": "ramp +55.3 pcm/s to t=5.2 s",
+        "should_trip": true,
+        "true_time_s": 1.4289999999999534,
+        "tripped": true,
+        "trip_time_s": 2.5099999999998346,
+        "cause": "overpower",
+        "response_time_s": 1.0809999999998812
+      },
+      {
+        "index": 80,
+        "desc": "step +55 pcm",
+        "should_trip": true,
+        "true_time_s": 5.0360000000000165,
+        "tripped": true,
+        "trip_time_s": 5.040000000000018,
+        "cause": "overpower",
+        "response_time_s": 0.004000000000001336
+      },
+      {
+        "index": 81,
+        "desc": "step +42 pcm",
+        "should_trip": true,
+        "true_time_s": 9.053000000000422,
+        "tripped": true,
+        "trip_time_s": 9.060000000000418,
+        "cause": "overpower",
+        "response_time_s": 0.0069999999999961204
+      },
+      {
+        "index": 82,
+        "desc": "step +428 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 83,
+        "desc": "step +396 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 84,
+        "desc": "step +293 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 85,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.160999999999724,
+        "tripped": true,
+        "trip_time_s": 4.169999999999727,
+        "cause": "overpower",
+        "response_time_s": 0.009000000000003006
+      },
+      {
+        "index": 86,
+        "desc": "ramp +42.2 pcm/s to t=7.4 s",
+        "should_trip": true,
+        "true_time_s": 2.4829999999998376,
+        "tripped": true,
+        "trip_time_s": 2.8999999999997916,
+        "cause": "overpower",
+        "response_time_s": 0.4169999999999541
+      },
+      {
+        "index": 87,
+        "desc": "ramp +1.4 pcm/s to t=10.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 88,
+        "desc": "ramp +0.6 pcm/s to t=15.1 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 89,
+        "desc": "step +27 pcm",
+        "should_trip": true,
+        "true_time_s": 21.80900000000367,
+        "tripped": true,
+        "trip_time_s": 21.810000000003672,
+        "cause": "overpower",
+        "response_time_s": 0.0010000000000012221
+      },
+      {
+        "index": 90,
+        "desc": "ramp +47.9 pcm/s to t=5.6 s",
+        "should_trip": true,
+        "true_time_s": 1.9209999999998992,
+        "tripped": true,
+        "trip_time_s": 2.7099999999998126,
+        "cause": "overpower",
+        "response_time_s": 0.7889999999999133
+      },
+      {
+        "index": 91,
+        "desc": "step -368 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 92,
+        "desc": "step +17 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 93,
+        "desc": "step -478 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 94,
+        "desc": "zigzag peak 10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 95,
+        "desc": "step +482 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 96,
+        "desc": "step -570 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 97,
+        "desc": "zigzag peak 28 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 98,
+        "desc": "step -212 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 99,
+        "desc": "step +10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 100,
+        "desc": "step -739 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 101,
+        "desc": "step +253 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 102,
+        "desc": "step -210 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 103,
+        "desc": "ramp +1.5 pcm/s to t=8.1 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 104,
+        "desc": "zigzag peak 45 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 105,
+        "desc": "ramp +2.5 pcm/s to t=8.8 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 106,
+        "desc": "ramp +0.8 pcm/s to t=10.8 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 107,
+        "desc": "zigzag peak 20 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 108,
+        "desc": "step +446 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 109,
+        "desc": "step -548 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 110,
+        "desc": "zigzag peak 34 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 111,
+        "desc": "ramp +61.3 pcm/s to t=4.6 s",
+        "should_trip": true,
+        "true_time_s": 1.1569999999999834,
+        "tripped": true,
+        "trip_time_s": 2.379999999999849,
+        "cause": "overpower",
+        "response_time_s": 1.2229999999998655
+      },
+      {
+        "index": 112,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.0689999999996935,
+        "tripped": true,
+        "trip_time_s": 4.069999999999694,
+        "cause": "overpower",
+        "response_time_s": 0.001000000000000334
+      },
+      {
+        "index": 113,
+        "desc": "ramp +29.3 pcm/s to t=4.1 s",
+        "should_trip": true,
+        "true_time_s": 3.5829999999997164,
+        "tripped": true,
+        "trip_time_s": 3.5899999999997156,
+        "cause": "overpower",
+        "response_time_s": 0.006999999999999229
+      },
+      {
+        "index": 114,
+        "desc": "zigzag peak 26 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 115,
+        "desc": "ramp +29.6 pcm/s to t=5.6 s",
+        "should_trip": true,
+        "true_time_s": 3.5619999999997187,
+        "tripped": true,
+        "trip_time_s": 3.569999999999718,
+        "cause": "overpower",
+        "response_time_s": 0.007999999999999119
+      },
+      {
+        "index": 116,
+        "desc": "ramp +22.4 pcm/s to t=5.2 s",
+        "should_trip": true,
+        "true_time_s": 4.232999999999748,
+        "tripped": true,
+        "trip_time_s": 4.239999999999751,
+        "cause": "overpower",
+        "response_time_s": 0.007000000000002338
+      },
+      {
+        "index": 117,
+        "desc": "step +321 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 118,
+        "desc": "ramp +28.2 pcm/s to t=7.8 s",
+        "should_trip": true,
+        "true_time_s": 3.666999999999707,
+        "tripped": true,
+        "trip_time_s": 3.669999999999707,
+        "cause": "overpower",
+        "response_time_s": 0.0029999999999996696
+      },
+      {
+        "index": 119,
+        "desc": "zigzag peak 60 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      }
+    ]
+  },
+  "noisy": {
+    "summary": {
+      "n_should_trip": 61,
+      "n_should_not_trip": 59,
+      "missed_trips": 0,
+      "false_trips": 0,
+      "missed_trip_rate": 0.0,
+      "false_trip_rate": 0.0,
+      "response_time_s": {
+        "min": -0.8280000000010119,
+        "median": 0.010999999999998789,
+        "max": 1.2529999999998622,
+        "mean": 0.07226229508189255
+      }
+    },
+    "scenarios": [
+      {
+        "index": 0,
+        "desc": "ramp +64.0 pcm/s to t=8.1 s",
+        "should_trip": true,
+        "true_time_s": 1.0769999999999922,
+        "tripped": true,
+        "trip_time_s": 2.3299999999998544,
+        "cause": "overpower",
+        "response_time_s": 1.2529999999998622
+      },
+      {
+        "index": 1,
+        "desc": "step -749 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 2,
+        "desc": "ramp +2.0 pcm/s to t=9.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 3,
+        "desc": "step -472 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 4,
+        "desc": "ramp +2.4 pcm/s to t=9.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 5,
+        "desc": "ramp +3.9 pcm/s to t=10.1 s",
+        "should_trip": true,
+        "true_time_s": 17.367999999998244,
+        "tripped": true,
+        "trip_time_s": 16.969999999997757,
+        "cause": "overpower",
+        "response_time_s": -0.3980000000004864
+      },
+      {
+        "index": 6,
+        "desc": "step +16 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 7,
+        "desc": "step +51 pcm",
+        "should_trip": true,
+        "true_time_s": 5.878000000000298,
+        "tripped": true,
+        "trip_time_s": 5.700000000000238,
+        "cause": "overpower",
+        "response_time_s": -0.17800000000005944
+      },
+      {
+        "index": 8,
+        "desc": "step +361 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 9,
+        "desc": "ramp +3.9 pcm/s to t=13.4 s",
+        "should_trip": true,
+        "true_time_s": 13.347999999998041,
+        "tripped": true,
+        "trip_time_s": 13.069999999998196,
+        "cause": "overpower",
+        "response_time_s": -0.2779999999998459
+      },
+      {
+        "index": 10,
+        "desc": "step +529 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 11,
+        "desc": "ramp +1.1 pcm/s to t=7.0 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 12,
+        "desc": "step +510 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 13,
+        "desc": "zigzag peak 33 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 14,
+        "desc": "step +281 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 15,
+        "desc": "step +46 pcm",
+        "should_trip": true,
+        "true_time_s": 7.598000000000872,
+        "tripped": true,
+        "trip_time_s": 7.460000000000826,
+        "cause": "overpower",
+        "response_time_s": -0.13800000000004609
+      },
+      {
+        "index": 16,
+        "desc": "step -491 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 17,
+        "desc": "step +543 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 18,
+        "desc": "step +253 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 19,
+        "desc": "step -454 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 20,
+        "desc": "ramp +39.4 pcm/s to t=4.2 s",
+        "should_trip": true,
+        "true_time_s": 2.833999999999799,
+        "tripped": true,
+        "trip_time_s": 3.0199999999997784,
+        "cause": "overpower",
+        "response_time_s": 0.18599999999997952
+      },
+      {
+        "index": 21,
+        "desc": "step +336 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 22,
+        "desc": "step +470 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 23,
+        "desc": "step +42 pcm",
+        "should_trip": true,
+        "true_time_s": 8.905000000000504,
+        "tripped": true,
+        "trip_time_s": 8.66000000000064,
+        "cause": "overpower",
+        "response_time_s": -0.24499999999986422
+      },
+      {
+        "index": 24,
+        "desc": "ramp +57.3 pcm/s to t=4.1 s",
+        "should_trip": true,
+        "true_time_s": 1.3269999999999647,
+        "tripped": true,
+        "trip_time_s": 2.469999999999839,
+        "cause": "overpower",
+        "response_time_s": 1.1429999999998743
+      },
+      {
+        "index": 25,
+        "desc": "step -629 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 26,
+        "desc": "ramp +1.2 pcm/s to t=13.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 27,
+        "desc": "ramp +1.0 pcm/s to t=10.9 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 28,
+        "desc": "step +16 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 29,
+        "desc": "step -163 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 30,
+        "desc": "ramp +2.9 pcm/s to t=7.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 31,
+        "desc": "step +51 pcm",
+        "should_trip": true,
+        "true_time_s": 5.905000000000307,
+        "tripped": true,
+        "trip_time_s": 5.750000000000255,
+        "cause": "overpower",
+        "response_time_s": -0.15500000000005176
+      },
+      {
+        "index": 32,
+        "desc": "step -429 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 33,
+        "desc": "step +477 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 34,
+        "desc": "ramp +30.9 pcm/s to t=8.6 s",
+        "should_trip": true,
+        "true_time_s": 3.4719999999997286,
+        "tripped": true,
+        "trip_time_s": 3.4899999999997267,
+        "cause": "overpower",
+        "response_time_s": 0.017999999999998018
+      },
+      {
+        "index": 35,
+        "desc": "step +331 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 36,
+        "desc": "ramp +30.7 pcm/s to t=6.9 s",
+        "should_trip": true,
+        "true_time_s": 3.487999999999727,
+        "tripped": true,
+        "trip_time_s": 3.4799999999997278,
+        "cause": "overpower",
+        "response_time_s": -0.007999999999999119
+      },
+      {
+        "index": 37,
+        "desc": "ramp +50.8 pcm/s to t=6.1 s",
+        "should_trip": true,
+        "true_time_s": 1.7039999999999231,
+        "tripped": true,
+        "trip_time_s": 2.5999999999998247,
+        "cause": "overpower",
+        "response_time_s": 0.8959999999999015
+      },
+      {
+        "index": 38,
+        "desc": "step +425 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 39,
+        "desc": "zigzag peak 47 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 40,
+        "desc": "zigzag peak 18 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 41,
+        "desc": "step -476 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 42,
+        "desc": "ramp +2.3 pcm/s to t=13.7 s",
+        "should_trip": true,
+        "true_time_s": 25.558000000008253,
+        "tripped": true,
+        "trip_time_s": 24.73000000000724,
+        "cause": "overpower",
+        "response_time_s": -0.8280000000010119
+      },
+      {
+        "index": 43,
+        "desc": "step -633 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 44,
+        "desc": "step -649 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 45,
+        "desc": "zigzag peak 56 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 46,
+        "desc": "step -710 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 47,
+        "desc": "step -610 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 48,
+        "desc": "ramp +38.4 pcm/s to t=7.1 s",
+        "should_trip": true,
+        "true_time_s": 2.9739999999997835,
+        "tripped": true,
+        "trip_time_s": 3.049999999999775,
+        "cause": "overpower",
+        "response_time_s": 0.07599999999999163
+      },
+      {
+        "index": 49,
+        "desc": "zigzag peak 40 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 50,
+        "desc": "step -384 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 51,
+        "desc": "step -152 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 52,
+        "desc": "zigzag peak 68 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 53,
+        "desc": "step +239 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 54,
+        "desc": "ramp +49.4 pcm/s to t=5.4 s",
+        "should_trip": true,
+        "true_time_s": 1.8029999999999122,
+        "tripped": true,
+        "trip_time_s": 2.659999999999818,
+        "cause": "overpower",
+        "response_time_s": 0.8569999999999058
+      },
+      {
+        "index": 55,
+        "desc": "step -594 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 56,
+        "desc": "step +416 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 57,
+        "desc": "step +347 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 58,
+        "desc": "step +250 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 59,
+        "desc": "step +23 pcm",
+        "should_trip": true,
+        "true_time_s": 28.41100000001174,
+        "tripped": true,
+        "trip_time_s": 27.640000000010797,
+        "cause": "overpower",
+        "response_time_s": -0.7710000000009423
+      },
+      {
+        "index": 60,
+        "desc": "step +252 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 61,
+        "desc": "step -344 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 62,
+        "desc": "step +10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 63,
+        "desc": "ramp +1.2 pcm/s to t=11.7 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 64,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.188999999999734,
+        "tripped": true,
+        "trip_time_s": 4.109999999999707,
+        "cause": "overpower",
+        "response_time_s": -0.07900000000002638
+      },
+      {
+        "index": 65,
+        "desc": "step +500 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 66,
+        "desc": "step +385 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 67,
+        "desc": "ramp +0.6 pcm/s to t=11.2 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 68,
+        "desc": "ramp +3.2 pcm/s to t=15.0 s",
+        "should_trip": true,
+        "true_time_s": 15.615999999996784,
+        "tripped": true,
+        "trip_time_s": 15.509999999996843,
+        "cause": "overpower",
+        "response_time_s": -0.10599999999994125
+      },
+      {
+        "index": 69,
+        "desc": "ramp +46.4 pcm/s to t=5.9 s",
+        "should_trip": true,
+        "true_time_s": 2.0559999999998846,
+        "tripped": true,
+        "trip_time_s": 2.7399999999998093,
+        "cause": "overpower",
+        "response_time_s": 0.6839999999999247
+      },
+      {
+        "index": 70,
+        "desc": "ramp +41.2 pcm/s to t=8.1 s",
+        "should_trip": true,
+        "true_time_s": 2.6009999999998246,
+        "tripped": true,
+        "trip_time_s": 2.949999999999786,
+        "cause": "overpower",
+        "response_time_s": 0.34899999999996156
+      },
+      {
+        "index": 71,
+        "desc": "step -403 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 72,
+        "desc": "step -285 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 73,
+        "desc": "step +26 pcm",
+        "should_trip": true,
+        "true_time_s": 23.540000000005787,
+        "tripped": true,
+        "trip_time_s": 22.910000000005017,
+        "cause": "overpower",
+        "response_time_s": -0.6300000000007699
+      },
+      {
+        "index": 74,
+        "desc": "ramp +0.9 pcm/s to t=15.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 75,
+        "desc": "ramp +1.1 pcm/s to t=15.4 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 76,
+        "desc": "step +34 pcm",
+        "should_trip": true,
+        "true_time_s": 14.087999999997631,
+        "tripped": true,
+        "trip_time_s": 13.579999999997913,
+        "cause": "overpower",
+        "response_time_s": -0.5079999999997185
+      },
+      {
+        "index": 77,
+        "desc": "ramp +48.1 pcm/s to t=6.1 s",
+        "should_trip": true,
+        "true_time_s": 1.903999999999901,
+        "tripped": true,
+        "trip_time_s": 2.6999999999998137,
+        "cause": "overpower",
+        "response_time_s": 0.7959999999999126
+      },
+      {
+        "index": 78,
+        "desc": "step -609 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 79,
+        "desc": "ramp +55.3 pcm/s to t=5.2 s",
+        "should_trip": true,
+        "true_time_s": 1.4289999999999534,
+        "tripped": true,
+        "trip_time_s": 2.5199999999998335,
+        "cause": "overpower",
+        "response_time_s": 1.09099999999988
+      },
+      {
+        "index": 80,
+        "desc": "step +55 pcm",
+        "should_trip": true,
+        "true_time_s": 5.0360000000000165,
+        "tripped": true,
+        "trip_time_s": 4.959999999999991,
+        "cause": "overpower",
+        "response_time_s": -0.07600000000002538
+      },
+      {
+        "index": 81,
+        "desc": "step +42 pcm",
+        "should_trip": true,
+        "true_time_s": 9.053000000000422,
+        "tripped": true,
+        "trip_time_s": 8.860000000000529,
+        "cause": "overpower",
+        "response_time_s": -0.19299999999989303
+      },
+      {
+        "index": 82,
+        "desc": "step +428 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 83,
+        "desc": "step +396 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 84,
+        "desc": "step +293 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 85,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.160999999999724,
+        "tripped": true,
+        "trip_time_s": 4.009999999999674,
+        "cause": "overpower",
+        "response_time_s": -0.15100000000005043
+      },
+      {
+        "index": 86,
+        "desc": "ramp +42.2 pcm/s to t=7.4 s",
+        "should_trip": true,
+        "true_time_s": 2.4829999999998376,
+        "tripped": true,
+        "trip_time_s": 2.9299999999997883,
+        "cause": "overpower",
+        "response_time_s": 0.44699999999995077
+      },
+      {
+        "index": 87,
+        "desc": "ramp +1.4 pcm/s to t=10.5 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 88,
+        "desc": "ramp +0.6 pcm/s to t=15.1 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 89,
+        "desc": "step +27 pcm",
+        "should_trip": true,
+        "true_time_s": 21.80900000000367,
+        "tripped": true,
+        "trip_time_s": 21.22000000000295,
+        "cause": "overpower",
+        "response_time_s": -0.5890000000007198
+      },
+      {
+        "index": 90,
+        "desc": "ramp +47.9 pcm/s to t=5.6 s",
+        "should_trip": true,
+        "true_time_s": 1.9209999999998992,
+        "tripped": true,
+        "trip_time_s": 2.6999999999998137,
+        "cause": "overpower",
+        "response_time_s": 0.7789999999999144
+      },
+      {
+        "index": 91,
+        "desc": "step -368 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 92,
+        "desc": "step +17 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 93,
+        "desc": "step -478 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 94,
+        "desc": "zigzag peak 10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 95,
+        "desc": "step +482 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 96,
+        "desc": "step -570 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 97,
+        "desc": "zigzag peak 28 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 98,
+        "desc": "step -212 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 99,
+        "desc": "step +10 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 100,
+        "desc": "step -739 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 101,
+        "desc": "step +253 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 102,
+        "desc": "step -210 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 103,
+        "desc": "ramp +1.5 pcm/s to t=8.1 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 104,
+        "desc": "zigzag peak 45 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 105,
+        "desc": "ramp +2.5 pcm/s to t=8.8 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 106,
+        "desc": "ramp +0.8 pcm/s to t=10.8 s",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 107,
+        "desc": "zigzag peak 20 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 108,
+        "desc": "step +446 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 109,
+        "desc": "step -548 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 110,
+        "desc": "zigzag peak 34 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 111,
+        "desc": "ramp +61.3 pcm/s to t=4.6 s",
+        "should_trip": true,
+        "true_time_s": 1.1569999999999834,
+        "tripped": true,
+        "trip_time_s": 2.379999999999849,
+        "cause": "overpower",
+        "response_time_s": 1.2229999999998655
+      },
+      {
+        "index": 112,
+        "desc": "step +59 pcm",
+        "should_trip": true,
+        "true_time_s": 4.0689999999996935,
+        "tripped": true,
+        "trip_time_s": 3.759999999999697,
+        "cause": "overpower",
+        "response_time_s": -0.3089999999999966
+      },
+      {
+        "index": 113,
+        "desc": "ramp +29.3 pcm/s to t=4.1 s",
+        "should_trip": true,
+        "true_time_s": 3.5829999999997164,
+        "tripped": true,
+        "trip_time_s": 3.5999999999997145,
+        "cause": "overpower",
+        "response_time_s": 0.016999999999998128
+      },
+      {
+        "index": 114,
+        "desc": "zigzag peak 26 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      },
+      {
+        "index": 115,
+        "desc": "ramp +29.6 pcm/s to t=5.6 s",
+        "should_trip": true,
+        "true_time_s": 3.5619999999997187,
+        "tripped": true,
+        "trip_time_s": 3.569999999999718,
+        "cause": "overpower",
+        "response_time_s": 0.007999999999999119
+      },
+      {
+        "index": 116,
+        "desc": "ramp +22.4 pcm/s to t=5.2 s",
+        "should_trip": true,
+        "true_time_s": 4.232999999999748,
+        "tripped": true,
+        "trip_time_s": 4.209999999999741,
+        "cause": "overpower",
+        "response_time_s": -0.02300000000000768
+      },
+      {
+        "index": 117,
+        "desc": "step +321 pcm",
+        "should_trip": true,
+        "true_time_s": 0.9990000000000008,
+        "tripped": true,
+        "trip_time_s": 1.0099999999999996,
+        "cause": "overpower",
+        "response_time_s": 0.010999999999998789
+      },
+      {
+        "index": 118,
+        "desc": "ramp +28.2 pcm/s to t=7.8 s",
+        "should_trip": true,
+        "true_time_s": 3.666999999999707,
+        "tripped": true,
+        "trip_time_s": 3.63999999999971,
+        "cause": "overpower",
+        "response_time_s": -0.026999999999997026
+      },
+      {
+        "index": 119,
+        "desc": "zigzag peak 60 pcm",
+        "should_trip": false,
+        "true_time_s": null,
+        "tripped": false,
+        "trip_time_s": null,
+        "cause": null
+      }
+    ]
+  }
+}
